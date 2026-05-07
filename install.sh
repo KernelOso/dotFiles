@@ -422,4 +422,6 @@ cat <<EOF > ~/.config/chezmoi/chezmoi.toml
     command = "fresh"
 EOF
 
+chezmoi init --apply https://github.com/KernelOso/dotFiles.git
+
 sudo rm /etc/sudoers.d/99-temp-install
