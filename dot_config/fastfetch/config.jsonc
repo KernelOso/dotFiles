@@ -1,0 +1,170 @@
+{
+  //Scheme : 
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo" : {
+    "padding": {
+      "top": 4,
+      "left": 2
+    },
+    "source": "~/.config/fastfetch/logos/hakari.png",
+    "width": 40,
+  },
+
+  //Display : https://github.com/fastfetch-cli/fastfetch/wiki/Json-Schema#display
+  "display": {
+    "separator": ">  ",
+
+    "key": {
+      "paddingLeft": 4
+    },
+
+    "color" : {
+      "separator": "magenta"
+    },
+
+    "constants": [
+      "╔══════════════════",
+      "══════════════════╗",
+      "╠══════════════════",
+      "══════════════════╣",
+      "╚══════════════════",
+      "══════════════════╝"
+    ]
+  },
+
+  //Modules : https://github.com/fastfetch-cli/fastfetch/wiki/Json-Schema#modules
+  "modules": [
+
+    "break",
+
+    {
+      "type": "title",
+      "format": "{$1}  {user-name-colored} {at-symbol-colored} {host-name-colored} {$2}"
+    },
+
+    "break",
+
+    {
+      "type": "os",
+      "key": "  O.S       "
+
+    },
+
+    {
+      "type": "kernel",
+      "key": "  Kernel    ",
+      "keyColor": "yellow"
+    },
+
+    {
+      "type": "shell",
+      "key": "  Shell     ",
+      "keyColor": "green"
+    },
+
+    {
+      "type": "terminal",
+      "key": "󰘳  Terminal  ",
+      "keyColor": "green"
+    },
+
+    "break",
+
+    {
+      "type": "custom",
+      "format": "{$3}  Hardware Info  {$4}"
+    },
+
+    "break",
+
+    {
+      "type": "display",
+      "key": "󰍹  Monitor   ",
+      "format": "{width} x {height} @ {refresh-rate}Hz | {inch}",
+      "keyColor": "blue"
+      
+    },
+
+    {
+      "type": "board",
+      "key": "  Mother    ",
+      "format": "Asus {name}",
+      "keyColor": "blue"
+    },
+
+    {
+      "type": "cpu",
+      "key": "  CPU       ",
+      "format": "{name}",
+      "keyColor": "red"
+    },
+
+    {
+      "type": "gpu",
+      "key": "  GPU       ",
+      "format": "{name}",
+      "keyColor": "red"
+    },
+
+    {
+      "type": "memory",
+      "key": "  RAM       ",
+      "keyColor": "green"
+    },
+
+    {
+      "type": "packages",
+      "key": "󰏖  Packages  ",
+      "keyColor": "yellow"
+    },
+
+    {
+      "type": "uptime",
+      "key": "󰥔  uptime    ",
+      "keyColor": "magenta"
+    },
+
+    "break",
+
+    {
+      "type": "custom",
+      "format": "{$3}      Misc       {$4}"
+    },
+
+    "break",
+
+    {
+      "type": "media",
+      "key": "  Song      ",
+      "format": "{title}",
+      "keyColor": "red"
+    },
+
+    {
+      "type": "media",
+      "key": "  Artist    ",
+      "format": "{artist}",
+      "keyColor": "red"
+    },
+
+    "break",
+
+    {
+      "type": "colors",
+      "symbol": "block",
+      "paddingLeft": 16
+    },
+
+    "break",
+
+    {
+      "type": "custom",
+      "format": "{$5}═════════════════{$6}"
+
+    },
+
+    "break"
+
+  ]
+}
